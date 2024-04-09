@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+.mainBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 2%;
+  background-color: rgb(240, 239, 239);
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+.castHead {
+  padding-left: 1%;
+}
+.leftbox {
+  color: #ffffff !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  /* border: solid black 1px; */
+  padding: 0px;
+  margin: 0px;
+  padding-left: 1%;
+}
+.rightbox {
+  padding-left: 1%;
+  width: 80%;
+}
+.imgPoster {
+  width: 15%;
+  border-radius: 10px;
+}
+.spantitle {
+  /* color: #363434; */
+  font-weight: normal;
+}
+.tagline {
+  font-style: italic;
+  /* color: #363434; */
+}
+.castmem {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+  list-style-type: none;
+  width: 100%;
+}
+.overviewMain {
+  color: #ffffff;
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  /* border: 1px solid black; */
+  padding-left: 1%;
+}
+.overview {
+  width: 100%;
+  max-height: fit-content;
+}
+
+@media (max-width: 700px) {
+  * {
+    max-width: 100%;
+  }
+  .searchBar {
+    outline: none;
+    width: 80%;
+    height: 4vh;
+  }
+  .mainBox {
+    flex-direction: column;
+    height: fit-content;
+    max-height: fit-content;
+    padding-left: 5%;
+    width: 100%;
+  }
+  .leftbox {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 1%;
+  }
+  .rightbox {
+    width: 100vw;
+  }
+  .imgPoster {
+    width: 70vw;
+  }
+  .overviewMain {
+    padding-left: 0;
+    margin: 0;
+  }
+  .overview {
+    width: 90vw;
+    padding: 0px;
+    margin: 0px;
+  }
+  .castmem {
+    width: 100%;
+  }
+}
